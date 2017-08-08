@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox CSS3 (CSS Flexible Box Layout Module)</title>
+	<style>
+		a {
+			text-decoration: none;
+			color: steelblue;
+			font-weight: bold;
+		}
+		.unLink {
+			font-weight: bold;
+			color: tomato;
+		}
+		#contenedor-flexible {
+			background-color: #474749;
+			display: flex;
+			flex-wrap: nowrap;
+		}
+		.item-flex {
+			padding: 1rem;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 2px 1px 1px #000000;
+			margin: 2px;
+			flex-grow: 1;
+		}
+	</style>
+</head>
+<body>
+	<h2>Flexbox CSS3 (CSS Flexible Box Layout Module)</h2>
+	<div>
+		<p>Especificación para mejorar el alineamiento, dirección y orden de los elementos en un documento web. La principal característica del contenedor flexible es la capacidad para modificar la anchura y altura de los elementos hijos para así llenar los espacios disponibles.</p>
+		<p>Fué presentado en el 2009 y el último borrador en el 2014</p>
+	</div>
+	<fieldset>
+    <legend>Conceptos básicos</legend>
+    <table>
+    	<thead>
+    		<th>Propiedad</th>
+    		<th>Descripción</th>
+    	</thead>
+    	<tbody>
+    		<tr>
+    			<td>display: flex;</td>
+    			<td>
+    				<p>Hace que el elemento sea un bloque, es decir, generalmente comienzan en una línea nueva y los elementos hermanos aparecen en líneas diferences.</p>
+    			</td>
+    		</tr>
+    		<tr>
+    			<td>display: inline-flex;</td>
+    			<td>
+    				<p>Hace que el elemento se presente en línea, sus hermanos podrán aparecer en la misma línea y se acoplan sólo al tamaño de su contenido.</p>
+    			</td>
+    		</tr>
+    	</tbody>
+    </table>
+  </fieldset>
+  <div>
+  	<p>La especificación de este módulo divide las propiedades en 2 grupos, las que pertenecen al contenedor y las que pertenecen a los hijos</p>
+  </div>
+  <div>
+  	<div id="contenedor-flexible">
+  		<div class="item-flex">
+  			<h3>Propiedades del contenedor flexible</h3>
+  			<p><a href="flexbox-direction.html">flex-direction: row / row-reverse / column / column-reverse;</a> permite que se pueda manejar el direccionamiento de los items dentro del contenedor, inclusive pudiendo cambiar el flujo normal en el que se presentan los elementos</p>
+  			<p><a href="flexbox-wrap.html">flex-wrap: nowrap / wrap / wrap-reverse;</a> es una propiedad que a yuda a definir si el contenedor va a comportarse como un elemento multi-línea</p>
+  			<p><span class="unLink">flex-flow: [row, row-reverse, column, column-reverse] [nowrap, wrap, wrap-reverse]</span> es el shorthand de las propiedades antes mencionadas</p>
+  			<p><a href="justify-content.html">justify-content: flex-start / flex-end / center / space-between / space-around;</a> sirve para alinear los items en el eje pricipal, así como para repartirlos a lo largo de este</p>
+  			<p><a href="align-items.html">align-items: strech / flex-start / flex-end / center / baseline;</a> sirve para alinear los items pero de forma vertical</p>
+  			<p><a href="align-content.html">align-content: strech / flex-start / flex-end / center / space-between / space-around;</a> alinea los elementos en caso de que se cuente con espacio extra cuando el elemento es multi-línea</p>
+  		</div>
+  		<div class="item-flex">
+  			<h3>Propiedades del item</h3>
+  			<p><a href="item-order.html">order: [n];</a> n especifica el orden en que se mostrarán los items dentro del contenedor flexible, en orden ascendente, en caso de que tengan el mismo número aparecerán de acuerdo a como se encuentran en el DOM</p>
+    		<p><a href="item-flex-grow.html">flex-grow: [n];</a> este es el factor de crecimiento de los items entre ellos mismos, ya que distribuyen el espacio disponible dentro del contenedor flexible</p>
+    		<p><a href="item-flex-shrink.html">flex-shrink: [n];</a> es lo contrario a "flex-grow" es el índice reductivo de un elemento con respecto a los demás</p>
+    		<p><a href="item-flex-basis.html">flex-basis: auto;</a> permite establecer el tamaño base de los items</p>
+    		<p><span class="unLink">flex: flex-grow flex-shrink flex-basis;</span> es el shorthand de las propiedades antes mencionadas</p>
+    		<p><a href="item-align-self.html">align-self: auto / flex-start / flex-end / center / baseline / strech;</a> alineaciones que se aplican a un item determinado y no a todos los del contenedor flexible</p>
+  		</div>
+  	</div>
+  </div>
+  <div>
+  	Fuente original: http://soyfrontend.com/guia-visual-aprender-flexbox-css3/
+  </div>
+</body>
+</html>

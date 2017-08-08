@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio align-self</title>
+	<link rel="stylesheet" href="global-styles.css">
+	<style>
+		#contenedor-flexible {
+		 	background-color: #474749;
+		 	display: flex;
+		 	height: 300px;
+		 }
+		.item-flex {
+		 	background-color: #fff;
+		 	border-radius: 10px;
+		 	color: #CEB342;
+		 	font-family: sans-serif;
+		 	font-size: 3em;
+		 	font-weight: bold;
+		 	line-height: 80px;
+		 	margin: 2px;
+		 	text-align: center;
+		 	width: 160px;
+		}
+		.item-flex:nth-child(1) {
+			align-self: flex-start;
+		}
+		.item-flex:nth-child(2) {
+			align-self: flex-end;
+		}
+		.item-flex:nth-child(3) {
+			align-self: stretch;
+		}
+		.item-flex:nth-child(4) {
+			align-self: center;
+		}
+		.item-flex:nth-child(5) {
+			align-self: baseline;
+		}
+	</style>
+</head>
+<body>
+	<h2>Propiedad align-self</h2>
+	<p>align-self: auto/flex-start/flex-end/center/baseline/stretch;</p>
+	<div id="contenedor-flexible">
+		<div class="item-flex">1</div>
+		<div class="item-flex">2</div>
+		<div class="item-flex">3</div>
+		<div class="item-flex">4</div>
+		<div class="item-flex">5</div>
+	</div>
+	<div>
+		<a href="index.html" class="myButton"> &#9668; Regresar</a>
+	</div>
+	<div>
+  	Fuente original: http://soyfrontend.com/guia-visual-aprender-flexbox-css3/
+  </div>
+</body>
+</html>

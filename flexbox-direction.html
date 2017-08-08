@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio flex-direction</title>
+	<link rel="stylesheet" href="global-styles.css">
+	<style>
+		#contenedor-flexible-prop-row {
+			background-color: #474749;
+			display: flex;
+			flex-direction: row;
+		}
+		#contenedor-flexible-prop-row-reverse {
+			background-color: #474749;
+			display: flex;
+			flex-direction: row-reverse;
+		}
+		#contenedor-flexible-prop-column {
+			background-color: #474749;
+			display: flex;
+			flex-direction: column;
+		}
+		#contenedor-flexible-prop-column-reverse {
+			background-color: #474749;
+			display: flex;
+			flex-direction: column-reverse;
+		}
+		.item-flex {
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 2px 1px 1px #000000;
+			color: #CEB342;
+			font-family: sans-serif;
+			font-size: 3em;
+			font-weight: bold;
+			height: 80px;
+			line-height: 80px;
+			margin: 2px;
+			text-align: center;
+			width: 80px;
+		}
+	</style>
+</head>
+<body>
+	<h2>Propiedad flex-direction</h2>
+	<fieldset>
+    <legend> flex-direction: row; </legend>
+    <div class="definition">"(por defecto) el contenedor alineará el contenido de izquierda a derecha"</div>
+		<div id="contenedor-flexible-prop-row">
+			<div class="item-flex">1</div>
+			<div class="item-flex">2</div>
+			<div class="item-flex">3</div>
+			<div class="item-flex">4</div>
+			<div class="item-flex">5</div>
+		</div>
+	</fieldset>
+	<fieldset>
+    <legend> flex-direction: row-reverse; </legend>
+    <div class="definition">"presenta el contenido de derecha a izquierda pero respetando el orden en el que aparecen los elementos"</div>
+		<div id="contenedor-flexible-prop-row-reverse">
+			<div class="item-flex">1</div>
+			<div class="item-flex">2</div>
+			<div class="item-flex">3</div>
+			<div class="item-flex">4</div>
+			<div class="item-flex">5</div>
+		</div>
+	</fieldset>
+	<fieldset>
+    <legend> flex-direction: column; </legend>
+    <div class="definition">"los items se apilan en una sola columna"</div>
+		<div id="contenedor-flexible-prop-column">
+			<div class="item-flex">1</div>
+			<div class="item-flex">2</div>
+			<div class="item-flex">3</div>
+			<div class="item-flex">4</div>
+			<div class="item-flex">5</div>
+		</div>
+	</fieldset>
+	<fieldset>
+    <legend> flex-direction: column-reverse; </legend>
+    <div class="definition">"los items se alinearán en una columna de forma invertida"</div>
+		<div id="contenedor-flexible-prop-column-reverse">
+			<div class="item-flex">1</div>
+			<div class="item-flex">2</div>
+			<div class="item-flex">3</div>
+			<div class="item-flex">4</div>
+			<div class="item-flex">5</div>
+		</div>
+	</fieldset>
+	<div>
+		<a href="index.html" class="myButton"> &#9668; Regresar</a>
+	</div>
+	<div>
+  	Fuente original: http://soyfrontend.com/guia-visual-aprender-flexbox-css3/
+  </div>
+</body>
+</html>

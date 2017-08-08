@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio flex-wrap</title>
+	<link rel="stylesheet" href="global-styles.css">
+	<style>
+		#contenedor-flexible-prop-nowrap {
+			background-color: #474749;
+			display: flex;
+			flex-wrap: nowrap;
+		}
+		#contenedor-flexible-prop-wrap {
+			background-color: #474749;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		#contenedor-flexible-prop-wrap-reverse {
+			background-color: #474749;
+			display: flex;
+			flex-wrap: wrap-reverse;
+		}
+		.item-flex {
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 2px 1px 1px #000000;
+			color: #CEB342;
+			font-family: sans-serif;
+			font-size: 3em;
+			font-weight: bold;
+			height: 80px;
+			line-height: 80px;
+			margin: 2px;
+			text-align: center;
+			width: 80px;
+		}
+	</style>
+</head>
+<body>
+	<h2>Propiedad flex-wrap</h2>
+	<fieldset>
+    <legend> flex-wrap: nowrap; </legend>
+    <div class="definition">"(por defecto) los items tratan de distribuirse en una sola línea, el contenedor tendrá una sola línea principal, sin embargo, el contenido se podrá desbordar"</div>
+		<div id="contenedor-flexible-prop-nowrap">
+			<div class="item-flex">1</div>
+			<div class="item-flex">2</div>
+      <div class="item-flex">3</div>
+      <div class="item-flex">4</div>
+      <div class="item-flex">5</div>
+      <div class="item-flex">6</div>
+      <div class="item-flex">7</div>
+      <div class="item-flex">8</div>
+      <div class="item-flex">9</div>
+      <div class="item-flex">10</div>
+		</div>
+	</fieldset>
+	<fieldset>
+    <legend> flex-wrap: wrap; </legend>
+    <div class="definition">"los items son colocados en varias líneas, si el ancho de los elementos supera el tamaño del contenedor, se crear una nueva línea en la parte inferior"</div>
+		<div id="contenedor-flexible-prop-wrap">
+			<div class="item-flex">1</div>
+			<div class="item-flex">2</div>
+      <div class="item-flex">3</div>
+      <div class="item-flex">4</div>
+      <div class="item-flex">5</div>
+      <div class="item-flex">6</div>
+      <div class="item-flex">7</div>
+      <div class="item-flex">8</div>
+      <div class="item-flex">9</div>
+      <div class="item-flex">10</div>
+		</div>
+	</fieldset>
+	<fieldset>
+    <legend> flex-wrap: wrap-reverse; </legend>
+    <div class="definition">"los items son colocados en varias líneas, si el ancho de los elementos supera el tamaño del contenedor, se crear una nueva línea en la parte superior"</div>
+		<div id="contenedor-flexible-prop-wrap-reverse">
+			<div class="item-flex">1</div>
+			<div class="item-flex">2</div>
+      <div class="item-flex">3</div>
+      <div class="item-flex">4</div>
+      <div class="item-flex">5</div>
+      <div class="item-flex">6</div>
+      <div class="item-flex">7</div>
+      <div class="item-flex">8</div>
+      <div class="item-flex">9</div>
+      <div class="item-flex">10</div>
+		</div>
+	</fieldset>
+	<div>
+		<a href="index.html" class="myButton"> &#9668; Regresar</a>
+	</div>
+	<div>
+  	Fuente original: http://soyfrontend.com/guia-visual-aprender-flexbox-css3/
+  </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio flex-basis</title>
+  <link rel="stylesheet" href="global-styles.css">
+	<style>
+		 #contenedor-flexible {
+          background-color: #474749;
+          display: flex;
+      }
+      .item-flex {
+          background-color: #fff;
+          border-radius: 10px;
+          color: #CEB342;
+          font-family: sans-serif;
+          font-size: 3em;
+          font-weight: bold;
+          height: 80px;
+          line-height: 80px;
+          margin: 2px;
+          text-align: center;
+          width: 160px;
+      }
+      .item-flex:nth-child(1) {
+          flex-basis: 100px;
+      }
+      .item-flex:nth-child(2) {
+          flex-basis: auto;
+      }
+      .item-flex:nth-child(3) {
+          flex-basis: 50px;
+      }
+      .item-flex:nth-child(4) {
+          flex-basis: auto;
+      }
+      .item-flex:nth-child(5) {
+          flex-basis: auto;
+      }
+	</style>
+</head>
+<body>
+	<h2>Propiedad flex-basis</h2>
+	<p>flex-basis: auto/px/rem/em;</p>
+	<div id="contenedor-flexible">
+		<div class="item-flex">1</div>
+		<div class="item-flex">2</div>
+		<div class="item-flex">3</div>
+		<div class="item-flex">4</div>
+		<div class="item-flex">5</div>
+	</div>
+  <div>
+    <a href="index.html" class="myButton"> &#9668; Regresar</a>
+  </div>
+  <div>
+    Fuente original: http://soyfrontend.com/guia-visual-aprender-flexbox-css3/
+  </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio justify-content</title>
+	<link rel="stylesheet" href="global-styles.css">
+	<style>
+		#contenedor-flexible-prop-flex-start {
+			background-color: #474749;
+			display: flex;
+			justify-content: flex-start;
+		}
+		#contenedor-flexible-prop-flex-end {
+			background-color: #474749;
+			display: flex;
+			justify-content: flex-end;
+		}
+		#contenedor-flexible-prop-center {
+			background-color: #474749;
+			display: flex;
+			justify-content: center;
+		}
+		#contenedor-flexible-prop-space-between {
+			background-color: #474749;
+			display: flex;
+			justify-content: space-between;
+		}
+		#contenedor-flexible-prop-space-around {
+			background-color: #474749;
+			display: flex;
+			justify-content: space-around;
+		}
+		.item-flex {
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 2px 1px 1px #000000;
+			color: #CEB342;
+			font-family: sans-serif;
+			font-size: 3em;
+			font-weight: bold;
+			height: 80px;
+			line-height: 80px;
+			margin: 2px;
+			text-align: center;
+			width: 80px;
+		}
+	</style>
+</head>
+<body>
+	<h2>Propiedad justify-content</h2>
+	<fieldset>
+    <legend> justify-content: flex-start; </legend>
+    <div class="definition">"(por defecto) alínea el contenido arriba a la izquierda"</div>
+		<div id="contenedor-flexible-prop-flex-start">
+			<div class="item-flex">1</div>
+			<div class="item-flex">2</div>
+      <div class="item-flex">3</div>
+      <div class="item-flex">4</div>
+      <div class="item-flex">5</div>
+		</div>
+	</fieldset>
+	<fieldset>
+    <legend> justify-content: flex-end; </legend>
+    <div class="definition">"alínea el contenido con le final del contenedor"</div>
+		<div id="contenedor-flexible-prop-flex-end">
+			<div class="item-flex">1</div>
+			<div class="item-flex">2</div>
+      <div class="item-flex">3</div>
+      <div class="item-flex">4</div>
+      <div class="item-flex">5</div>
+		</div>
+	</fieldset>
+	<fieldset>
+    <legend> justify-content: center; </legend>
+    <div class="definition">"alínea los items al centro del contenedor"</div>
+		<div id="contenedor-flexible-prop-center">
+			<div class="item-flex">1</div>
+			<div class="item-flex">2</div>
+      <div class="item-flex">3</div>
+      <div class="item-flex">4</div>
+      <div class="item-flex">5</div>
+		</div>
+	</fieldset>
+	<fieldset>
+    <legend> justify-content: space-between; </legend>
+    <div class="definition">"alínea los items a lo largo del contenedor con la misma distancia, el primer y el último elemento se pegan al borde"</div>
+		<div id="contenedor-flexible-prop-space-between">
+			<div class="item-flex">1</div>
+			<div class="item-flex">2</div>
+      <div class="item-flex">3</div>
+      <div class="item-flex">4</div>
+      <div class="item-flex">5</div>
+		</div>
+	</fieldset>
+	<fieldset>
+    <legend> justify-content: space-around; </legend>
+    <div class="definition">"alínea los items a lo largo del contenedor con la misma distancia, incluyendo el espacio entre los bordes"</div>
+		<div id="contenedor-flexible-prop-space-around">
+			<div class="item-flex">1</div>
+			<div class="item-flex">2</div>
+      <div class="item-flex">3</div>
+      <div class="item-flex">4</div>
+      <div class="item-flex">5</div>
+		</div>
+	</fieldset>
+	<div>
+		<a href="index.html" class="myButton"> &#9668; Regresar</a>
+	</div>
+	<div>
+  	Fuente original: http://soyfrontend.com/guia-visual-aprender-flexbox-css3/
+  </div>
+</body>
+</html>
